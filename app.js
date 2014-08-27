@@ -9,7 +9,7 @@ var App = React.createClass({
     // listen for the audio element to be ready, make ze context, set
     // ze state
     var audio = new Audio();
-    audio.src = '/sounds/song.mp3';
+    audio.src = './sounds/song.mp3';
     audio.addEventListener('canplaythrough', this.createContext);
     this.setState({audio: audio});
   },
